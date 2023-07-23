@@ -1,0 +1,25 @@
+{
+  "name": "airtel-money-node",
+  "version": "1.0.0",
+  "description": "Airtel Money Integration in NodeJS",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manda Ravalison",
+  "keywords": [
+    "airtel",
+    "airtel money"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "@types/qs": "^6.9.7",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "qs": "^6.11.1"
+  }
+}
