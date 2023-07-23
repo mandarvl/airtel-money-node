@@ -9,6 +9,13 @@ export interface Options {
     currency: string,
 }
 
+export enum TransactionStatus {
+  Failed = "TF",
+  Success = "TS",
+  Ambiguous = "TA",
+  InProgress = "TIP"
+}
+
 export interface TransactionRequest {
     reference: string,
     subscriber: {
@@ -28,7 +35,7 @@ export interface TransactionResponse {
     data: {
       transaction: {
         id: string,
-        status: string,
+        status: TransactionStatus,
         airtel_money_id?: string,
         message?: string
       }
