@@ -16,6 +16,15 @@ export enum TransactionStatus {
   InProgress = "TIP"
 }
 
+export interface TransactionCallbackDetails {
+  transaction: {
+    id: string,
+    message: string,
+    status_code: TransactionStatus,
+    airtel_money_id: string
+  }
+}
+
 export interface TransactionRequest {
     reference: string,
     subscriber: {
