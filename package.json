@@ -1,6 +1,6 @@
 {
   "name": "airtel-money-node",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Airtel Money Integration in NodeJS",
   "main": "dist/src/index.js",
   "private": false,
