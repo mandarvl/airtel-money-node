@@ -10,7 +10,7 @@ class AuthService extends Service {
     const params = qs.stringify({
       grant_type: "client_credentials",
       client_id: clientId,
-      clientSecret: clientSecret
+      client_secret: clientSecret
     });
 
     const { data } = await this.httpClient.post<AuthResponse>("/auth/oauth2/token", params);
