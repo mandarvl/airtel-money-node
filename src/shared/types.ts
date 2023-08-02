@@ -30,7 +30,7 @@ export interface TransactionRequest {
     subscriber: {
       country?: string,
       currency?: string,
-      msisdn: string
+      msisdn: number
     },
     transaction: {
       amount: number,
