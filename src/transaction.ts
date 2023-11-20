@@ -4,7 +4,7 @@ import { TransactionRequest, TransactionResponse } from "./shared/types";
 class TransactionService extends Service {
 
     async get(id: string) {
-        const { data } = await this.httpClient.get<TransactionResponse>("/merchant/v1/payments/" + id);
+        const { data } = await this.httpClient.get<TransactionResponse>("/standard/v1/payments/" + id);
         return data;
     }
 
